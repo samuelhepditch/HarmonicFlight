@@ -1,0 +1,67 @@
+# Xcode
+*.pbxuser
+*.xccheckout
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+DerivedData/
+*.moved-aside
+*.xcuserstate
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Swift Package Manager
+.build/
+
+# Package.resolved file should be kept under source control
+# to ensure that everyone is building the project with the same
+# set of dependencies. Uncomment the following line if you want
+# to ignore the Package.resolved file.
+# *.resolved
+
+# Playgrounds
+timeline
+*.playground/
+!*.playground/Contents.swift
+!*.playground/Sources/
+!*.playground/Resources/
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# JetBrains/Android Studio
+.idea/
+*.iml
+*.hprof
+

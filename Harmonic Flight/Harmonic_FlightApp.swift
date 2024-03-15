@@ -1,17 +1,28 @@
-//
-//  Harmonic_FlightApp.swift
-//  Harmonic Flight
-//
-//  Created by Sam Hepditch on 2024-03-12.
-//
-
 import SwiftUI
 
+
+enum page: String {
+    case menu = "menu"
+    case game = "game"
+}
+
 @main
-struct Harmonic_FlightApp: App {
+struct HarmonicFlightApp: App {
+    
+    @State var visiblePage: page = .menu
+    @State var frequencyRange: (Double, Double) = (80, 200)
+    @State var amplitudeRange: (Double, Double) = (0.05, 0.25)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                if visiblePage == .menu {
+                    MenuView(visiblePage: self.$visiblePage, frequencyRange: self.$frequencyRange, amplitudeRange: self.$amplitudeRange)
+                } else if visiblePage == .game {
+                    GameView(visiblePage: self.$visiblePage, frequencyRange: self.$frequencyRange, amplitudeRange: self.$amplitudeRange)
+                }
+            }
         }
     }
 }
+
